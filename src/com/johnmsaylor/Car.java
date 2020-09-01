@@ -21,6 +21,10 @@ public class Car {
         return speed;
     }
 
+    public void beep() {
+        System.out.println("beep beep");
+    }
+
     public void beep(int intensity) {
         StringBuilder string = new StringBuilder("beep beep");
         for (int i = 0; i < intensity; i++) {
@@ -28,6 +32,7 @@ public class Car {
         }
         System.out.println(string);
     }
+
 
     public void go(int amount) {
         int speed = getSpeed();
